@@ -9,4 +9,20 @@
     <p>Aquí puedes encontrar información sobre los servicios que ofrecemos.</p>
 </div>
 
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="card service-card h-100 text-center">
+        <img src="{{ url_for('static', filename='img/dados.png') }}"
+            class="card-img-top" alt="Dados de colores">
+        <div class="card-body">
+          <h2 class="h4 card-title">Elaboración de calaveras</h2>
+          <p class="card-text">Creamos calaveras para acompañar tus celebraciones y mantener viva la tradición del Día de Muertos.</p>
+          <a href="{{ url_for('contacto') }}" class="btn btn-primary">Solicitar información</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}

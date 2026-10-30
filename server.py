@@ -16,7 +16,7 @@ def contacto():
 
 @app.route('/productos')
 def productos():
-    return render_template('productos.html')
+    return render_template('productos.html', titulo='Productos')
 
 if __name__ == '__main__':
     app.run(debug=True,port=5050)   

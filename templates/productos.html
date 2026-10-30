@@ -2,11 +2,56 @@
 {% block content %}
 
 <div class="container-fluid">
-
     <h1>Productos</h1>
-    <p>{{ mensaje }}</p>
+    <p>Descubre nuestros productos para celebrar y recordar el Día de Muertos.</p>
 </div>
 
+<div id="productosCarousel" class="carousel slide mi-carrusel" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{{ url_for('static', filename='img/productos/pan de muertos.jpeg') }}"
+                class="d-block w-100" alt="Pan de muerto tradicional">
+            <div class="text-center mt-3">
+                <h2 class="h4">Pan de muerto</h2>
+                <p>Disfruta el pan tradicional, ideal para compartir en familia y colocar en tu ofrenda.</p>
+            </div>
+        </div>
 
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='img/productos/comida.jpeg') }}"
+                class="d-block w-100" alt="Comida tradicional del Día de Muertos">
+            <div class="text-center mt-3">
+                <h2 class="h4">Comida tradicional</h2>
+                <p>Prepara una ofrenda especial con alimentos y bebidas tradicionales para recibir a tus seres queridos.</p>
+            </div>
+        </div>
 
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='img/productos/decoracion.jpeg') }}"
+                class="d-block w-100" alt="Decoración del Día de Muertos">
+            <div class="text-center mt-3">
+                <h2 class="h4">Decoración</h2>
+                <p>Llena tu hogar de color con detalles decorativos inspirados en la tradición del Día de Muertos.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='img/productos/altar.jpeg') }}"
+                class="d-block w-100" alt="Altar tradicional del Día de Muertos">
+            <div class="text-center mt-3">
+                <h2 class="h4">Altar de Día de Muertos</h2>
+                <p>Encuentra inspiración para crear un altar con flores, velas y recuerdos para honrar a tus seres queridos.</p>
+            </div>
+        </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#productosCarousel" role="button"
+        data-slide="prev" aria-label="Producto anterior">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#productosCarousel" role="button"
+        data-slide="next" aria-label="Producto siguiente">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+</div>
 {% endblock %}
